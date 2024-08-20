@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jogo de adivinhação.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Jogo da Adivinhação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="icon" sizes="32x32" href="./assets/favicon-32x32.png">        
+  <link rel="icon" sizes="192x192" href="./assets/favicon-192x192.png">
+  <link rel="icon" sizes="512x512" href="./assets/favicon-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+
+    <div class="screen1">
+
+      <h1>Jogo da Adivinhação</h1>
+      <p>Adivinhe um número entre 0 e 10</p>
+      
+      <form action="">
+        <input id="inputNumber" type="number">
+        <button id="btnTry">Tentar</button>
+      </form>
+      <span class="msgError hide">Você errou. Tente Novamente!</span>
+    </div>
+
+    <div class="screen2 hide">
+      <h2>Você acertou em X tentativa(s).</h2>
+      <button id="btnReset">Jogar novamente</button>
+    </div>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
